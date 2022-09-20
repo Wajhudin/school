@@ -84,4 +84,7 @@ $trainingspakprijs = $row['prijs']; //trainingspak prijs
 $totaal = ($balprijs * $bal[0][0]) + ($trainingspakprijs * $trainingspak[0][0]) + ($wedskledijprijs*$wedstrijdkledij[0][0]);
 echo "<br> Totaal kledij + Ballen: ".$totaal;
 
+
+
+//no way
 ?>
