@@ -86,5 +86,5 @@ echo "<br> Totaal kledij + Ballen: ".$totaal;
 
 
 
-//no way
+
 ?>
