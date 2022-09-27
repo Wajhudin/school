@@ -30,8 +30,8 @@
 	}
 
 
-    echo"<lablelp>Naam:</lablel>  <input type='text', name='naam'> <br><br>";
-    echo"<lablel>Voornaam:</lablel>  <input type='text', name='voornaam'><br><br>";
+    echo"<lablelp>Naam:</lablel>  <input type='text', name='naam' required> <br><br>";
+    echo"<lablel>Voornaam:</lablel>  <input type='text', name='voornaam' required><br><br>";
 
     $query = "select prijs from prijzen where id = 1";
     $result = mysqli_query($link, $query);
@@ -87,7 +87,7 @@
     echo("<lablel>Trainingsbal ({$bal}) € </lablel>"); 
     echo("<INPUT TYPE='checkbox' NAME='ball'> <br><br>");
     echo("<lablel> Akkoord met algemeen voorwaarden</lablel>");
-    echo("<INPUT TYPE='checkbox' NAME='voorwaarden'> <br><br>");
+    echo("<INPUT TYPE='checkbox' NAME='voorwaarden' required> <br><br>");
     echo("<lablel> <b>Inschrijvings Prijs: {$inschrijving}</lablel><br> <br>");
     echo("<input type='submit' value='Verzenden'> ");
 
