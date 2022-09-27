@@ -38,4 +38,6 @@ foreach($teamB as $ploegen){
 
 echo date("d/m/2021");
 
+
+
 ?>
