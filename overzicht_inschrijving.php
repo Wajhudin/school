@@ -1,6 +1,7 @@
 <?php
-$link = mysqli_connect("localhost","trainer","penalty","voetbal_web");
 
+
+ $link = mysqli_connect("localhost","trainer","penalty","voetbal_web");
 if($link){
     echo "verbinding geslaagd! <br>";
 }else{
@@ -9,9 +10,7 @@ if($link){
     exit();
 }
 
-// //$query = "SELECT COUNT(id), ploeg
-// //FROM inschrijving20222023
-// //GROUP BY pleog";
+
 
 //----------------------------------------------
 // aantal spelers per pleog
@@ -83,6 +82,23 @@ $trainingspakprijs = $row['prijs']; //trainingspak prijs
 
 $totaal = ($balprijs * $bal[0][0]) + ($trainingspakprijs * $trainingspak[0][0]) + ($wedskledijprijs*$wedstrijdkledij[0][0]);
 echo "<br> Totaal kledij + Ballen: ".$totaal;
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
