@@ -60,13 +60,13 @@ isset($_GET['train_prijs'])){
 
 }else{
     echo "<form method=\"get\" action=\"Wijzig_prijs.php\">";
-    echo "inschrijvingsPRIJS: <input type=\"number\" name=\"inschrijf_prijs\" >"." €";
+    echo "inschrijvingsPRIJS: <input type=\"number\" name=\"inschrijf_prijs\" step=\"any\">"." €";
     echo "<br>";
-    echo "BAL_PRIJS: <input type=\"number\" name=\"bal_prijs\" >"." €";
+    echo "BAL_PRIJS: <input type=\"number\" name=\"bal_prijs\"step=\"any\" >"." €";
     echo "<br>";
-    echo "Trainingspak_PRIJS: <input type=\"number\" name=\"train_prijs\" >"." €";
+    echo "Trainingspak_PRIJS: <input type=\"number\" name=\"train_prijs\" step=\"any\">"." €";
     echo "<br>";
-    echo "Wedstrijdkledij_PRIJS: <input type=\"number\" name=\"weds_prijs\" >"." €";
+    echo "Wedstrijdkledij_PRIJS: <input type=\"number\" name=\"weds_prijs\" step=\"any\">"." €";
     echo "<br>";
     echo "<br>";
     echo "<input type=\"submit\" value=\"Prijs Wijzijgen\">";
