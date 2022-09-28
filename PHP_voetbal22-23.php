@@ -84,11 +84,11 @@
     echo("</SELECT>");
     echo("<br><br>");
 
-    echo("<lablel>Trainingsbal ({$bal}) € </lablel>"); 
+    echo("<lablel>Trainingsbal <b>({$bal})</b> € </lablel>"); 
     echo("<INPUT TYPE='checkbox' NAME='ball'> <br><br>");
     echo("<lablel> Akkoord met algemeen voorwaarden</lablel>");
     echo("<INPUT TYPE='checkbox' NAME='voorwaarden' required> <br><br>");
-    echo("<lablel> <b>Inschrijvings Prijs: {$inschrijving}</lablel><br> <br>");
+    echo("<lablel> Inschrijvings Prijs: <b>{$inschrijving}</b></lablel><br> <br>");
     echo("<input type='submit' value='Verzenden'> ");
 
     echo("</form>");

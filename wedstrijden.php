@@ -16,7 +16,7 @@ $link = mysqli_connect("localhost","trainer","penalty","voetbal_web");
 echo "Today is " . $datum2 . "<br>";
 //$datum = date("d/m/2021");
 
-$query_teamA = "select TeamA,DatumWedstrijd from php_voetbalsite_wedstrijden where DatumWedstrijd in ('$datum2')";
+$query_teamA = "select TeamA,DatumWedstrijd from php_voetbalsite_wedstrijden group by  where DatumWedstrijd in ('$datum2')";
 $result = mysqli_query($link,$query_teamA);
 $teamA = mysqli_fetch_all($result);
 echo"<b>TeamA </b><br>";

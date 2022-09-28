@@ -30,19 +30,19 @@ if($link){
 $sql = "select id, voornaam, naam, ploeg from inschrijving20222023";
 $result = mysqli_query($link, $sql);
 
-echo"<p id='paragraph'>";
+
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
   
   while($row = mysqli_fetch_assoc($result)) {
     //echo"<p id='paragraph'>";
-    echo"<b>id:</b> " . $row["id"]. " - <b>Naam:</b> " . $row["voornaam"]. " " . $row["naam"]." - <b>Ploeg:</b> ".$row["ploeg"]."<br>";
+    echo"<p  class='paragraph'><b>id:</b> " . $row["id"]. " - <b>Naam:</b> " . $row["voornaam"]. " " . $row["naam"]." - <b>Ploeg:</b> ".$row["ploeg"]."<br></p>";
    
 } 
 } else {
   echo "0 results";
 }
-echo"</p>";
+
 if (isset($_GET['id']) && $_GET['id'] !== ""){
     $id_num = $_GET['id'];
     if($id_num == "Geen"){
@@ -73,6 +73,14 @@ if (isset($_GET['id']) && $_GET['id'] !== ""){
     echo "<br>";
     echo "<input type=\"submit\" value=\"Verwijderen\">";
     echo "</form>";
+
+
+
+
+
+
+    
+
 
 }
 

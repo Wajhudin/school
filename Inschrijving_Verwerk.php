@@ -53,18 +53,18 @@ isset($_GET['voorwaarden'])){
     $voornaam = $_GET['voornaam'];
     $team = $_GET['ploeg'];
 
-    echo "NAAM: {$_GET['naam'] } {$_GET['voornaam']}<br>";
-    echo "PLOEG: {$_GET['ploeg']}<br>";
-    echo "KLEDIJ: {$_GET['kledij']}<br>";
+    echo "<b>NAAM:</b> {$_GET['naam'] } {$_GET['voornaam']}<br>";
+    echo "<b>PLOEG:</b> {$_GET['ploeg']}<br>";
+    echo "<b>KLEDIJ:</b> {$_GET['kledij']}<br>";
     if (isset($_GET['ball']) && $_GET['ball']== 'on'){
         $bal = $bal;
         $bal_aanwijzing = "JA";
         $items = "bal";
-        echo "Bal: JA <br>";
+        echo "<b>Bal:</b> JA <br>";
         $totaal += $bal;
 
     }else{
-        echo "Bal: NEE <br>" ;
+        echo "<b>Bal:</b> NEE <br>" ;
         $bal_aanwijzing = "NEE";
         $bal = 0;
         $items = "";
@@ -90,14 +90,14 @@ isset($_GET['voorwaarden'])){
         $wedskled = "NEE";
     }
     $totaal += $inschrijving;
-    echo "Total_prijs: ", $totaal ."€ <br>";
+    echo "<b>Total_prijs:</b> ", $totaal ."€ <br>";
 
     // data naar database wegschrijven
 
     $query = "insert into inschrijving20222023 (naam,voornaam,ploeg,wedstrijdkledij,trainingspak,bal)
      values ('$naam','$voornaam','$team','$wedskled','$trainkled','$bal_aanwijzing')";
      if(mysqli_query($link, $query)){
-		echo "record toegevoegd";
+		echo "<br>record toegevoegd";
 	}else{
 		echo "Fout bij het toevoegen:".mysqli_error($link);
         echo'<a href="PHP_voetbal22-23.php">Voetball22-23</a>';
