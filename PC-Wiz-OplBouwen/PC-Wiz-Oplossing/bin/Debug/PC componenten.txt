@@ -1,0 +1,27 @@
+cpu,AMD Ryzen 5,229.90
+cpu,AMD Ryzen 7,329.90
+cpu,AMD Ryzen 9,589.90
+cpu,Intel Core i3,149.90
+cpu,Intel Core i5,294.00
+cpu,Intel Core i7,389.00
+cpu,Intel Core i9,649.00
+Moederbord,Gigabyte AORUS B550 AM4,104.90
+Moederbord,MSI GAMING x570,199.99
+Moederbord,ASUS ROG STRIX X570,319.00
+Moederbord,ASROCK C299 socket2066,499.00
+geheugen, Corsair 16GB,69.90
+geheugen, Corsair 32GB,124.90
+geheugen, Gskil 64GB,332.90
+geheugen, Gskil 256GB,1379.00
+Grafisch, MSI GF3060,459.00
+Grafisch, MSI RADEON RX 6750,699.00
+Grafisch, GEFORCE RTX 3080,1399.00
+Grafisch, GEFORCE GT 730,79.90
+Grafisch, PNY NVIDIA T400 2GB,169.90
+SSD, Samsung 1TB,149.90
+SSD, Kingston 240GB,32.99
+SSD, Samsung 2TB, 339.00
+case,Be quiet tower,109.90
+case,Corsair Obsidian,299.90
+case,Fractal,99.90
+case,Therpaltake,799.90
